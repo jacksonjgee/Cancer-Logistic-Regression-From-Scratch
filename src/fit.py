@@ -22,7 +22,7 @@ def cross_entropy_loss(y, y_pred):
 		
 	return -(total_loss / m)
 
-def gradient_descent(X, y, alpha = 0.01, epochs = 2000, tol = 1e-7):
+def gradient_descent(X, y, alpha = 0.01, epochs = 1000, tol = 1e-7):
 	X_b = np.c_[np.ones((X.shape[0], 1)), X] # Adds bias/intercept
 	theta = np.zeros(X_b.shape[1]) # Parameters initialised to 0's
 
